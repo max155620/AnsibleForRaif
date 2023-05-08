@@ -1,0 +1,10 @@
+---
+- name: Update
+  yum: 
+   name: '*'
+   state: latest
+   exclude: python
+  notify: 
+   - Reboot      
+- name: Remove old kernels
+  command: sudo /usr/bin/package-cleanup --oldkernels --count=2 -y

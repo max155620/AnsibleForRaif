@@ -1,0 +1,2 @@
+[servers]
+centoshost ansible_connection=ssh ansible_host=158.160.98.140 ansible_user=simpleuserlin
